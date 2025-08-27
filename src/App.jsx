@@ -11,6 +11,7 @@ const PROFILE = {
   linkedin: "https://www.linkedin.com/in/miller-dev",
   github: "https://github.com/andrew-n-miller",
   resumeUrl: "https://pub-389d99b423884e7eb35f407965fa8f32.r2.dev/Andrew%20Miller%20Resume%202025.pdf",
+  };
 
 const SKILLS = [
   { label: "Java", icon: <Code2 className="h-5 w-5" /> },
