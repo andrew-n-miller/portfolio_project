@@ -2,7 +2,6 @@ import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, FileDown, ExternalLink, MapPin, Moon, Sun, Code2, Server, Cloud, Shield } from "lucide-react";
 
-// ---- CONFIG: Edit these to personalize ----
 const PROFILE = {
   name: "Andrew Miller",
   title: "Full‑Stack Web Developer",
@@ -10,9 +9,8 @@ const PROFILE = {
   email: "andrew.nickolas.miller@gmail.com",
   phone: "(916) 500-7374",
   linkedin: "https://www.linkedin.com/in/miller-dev",
-  github: "https://github.com/your-github", // update me
-  resumeUrl: "#", // replace with a real link to your PDF in GitHub Releases or S3
-};
+  github: "https://github.com/andrew-n-miller",
+  resumeUrl: "https://pub-389d99b423884e7eb35f407965fa8f32.r2.dev/Andrew%20Miller%20Resume%202025.pdf",
 
 const SKILLS = [
   { label: "Java", icon: <Code2 className="h-5 w-5" /> },
