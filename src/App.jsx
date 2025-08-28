@@ -4,14 +4,14 @@ import { Github, Linkedin, Mail, FileDown, ExternalLink, MapPin, Moon, Sun, Code
 
 const PROFILE = {
   name: "Andrew Miller",
-  title: "Full-Stack Web Developer",
+  title: "Full‑Stack Web Developer",
   location: "Sacramento, CA (Remote)",
   email: "andrew.nickolas.miller@gmail.com",
   phone: "(916) 500-7374",
   linkedin: "https://www.linkedin.com/in/miller-dev",
   github: "https://github.com/andrew-n-miller",
   resumeUrl: "https://pub-389d99b423884e7eb35f407965fa8f32.r2.dev/Andrew%20Miller%20Resume%202025.pdf",
-};
+  };
 
 const SKILLS = [
   { label: "Java", icon: <Code2 className="h-5 w-5" /> },
@@ -34,19 +34,23 @@ const PROJECTS = [
     desc:
       "Maintained and enhanced a Struts 2.0 Java web app used by hundreds of users; implemented new features, improved performance, and reduced bug backlog by ~30% through tighter QA collaboration.",
     stack: ["Java", "Struts 2.0", "JavaScript", "PostgreSQL", "SVN"],
-    links: [{ href: "#", label: "Case Study" }],
+    links: [
+      { href: "#", label: "Case Study" },
+    ],
   },
   {
     name: "Data Integration Pipelines",
     desc:
-      "Built 6+ data integrations enabling real-time ingest/egress across enterprise systems, exposing secure RESTful endpoints and cutting manual handling by ~40%.",
+      "Built 6+ data integrations enabling real‑time ingest/egress across enterprise systems, exposing secure RESTful endpoints and cutting manual handling by ~40%.",
     stack: ["Apache NiFi", "Java", "Bash", "REST"],
-    links: [{ href: "#", label: "Architecture" }],
+    links: [
+      { href: "#", label: "Architecture" },
+    ],
   },
   {
     name: "Portfolio Website (This Site)",
     desc:
-      "Responsive, accessible portfolio built with React + Tailwind, animated with Framer Motion, and designed for 1-click deployment to AWS Amplify.",
+      "Responsive, accessible portfolio built with React + Tailwind, animated with Framer Motion, and designed for 1‑click deployment to AWS Amplify.",
     stack: ["React", "TailwindCSS", "Framer Motion", "Amplify"],
     links: [
       { href: "#", label: "Source" },
@@ -71,7 +75,7 @@ const EXPERIENCE = [
     company: "NIWC Atlantic",
     time: "Dec 2022 – Oct 2023",
     bullets: [
-      "Led a 3-person team to deliver patches across embedded and enterprise systems, increasing uptime ~20%.",
+      "Led a 3‑person team to deliver patches across embedded and enterprise systems, increasing uptime ~20%.",
       "Drove accreditation timelines and stakeholder communication for secure web services.",
       "Applied vulnerability management to strengthen system resilience.",
     ],
@@ -110,9 +114,7 @@ function Section({ id, title, children }) {
   return (
     <section id={id} className="scroll-mt-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-6 text-blue-900 dark:text-black">
-          {title}
-        </h2>
+        <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-6">{title}</h2>
         {children}
       </div>
     </section>
@@ -142,7 +144,7 @@ export default function Portfolio() {
   const year = useMemo(() => new Date().getFullYear(), []);
 
   return (
-    <div className="min-h-screen bg-zinc-100 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100 transition-colors duration-500">
+    <div className="min-h-screen bg-white text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100">
       {/* NAV */}
       <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 dark:supports-[backdrop-filter]:bg-zinc-950/70 border-b border-zinc-200/50 dark:border-zinc-800/60">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
@@ -183,12 +185,12 @@ export default function Portfolio() {
             <p className="text-sm text-zinc-600 dark:text-zinc-400 flex items-center gap-2">
               <MapPin className="h-4 w-4" /> {PROFILE.location}
             </p>
-            <h1 className="mt-3 text-4xl sm:text-5xl font-extrabold tracking-tight text-blue-900 dark:text-black">
+            <h1 className="mt-3 text-4xl sm:text-5xl font-extrabold tracking-tight">
               Building secure, scalable web apps.
             </h1>
             <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
-              I’m a full-stack developer with 6+ years of experience across Java, Python, and JavaScript—focused on
-              clean architecture, robust APIs, and cloud-native delivery.
+              I’m a full‑stack developer with 6+ years of experience across Java, Python, and JavaScript—focused on
+              clean architecture, robust APIs, and cloud‑native delivery.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
@@ -245,7 +247,7 @@ export default function Portfolio() {
               transition={{ duration: 0.4, delay: idx * 0.05 }}
               className="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-5 hover:shadow-lg/40 shadow-sm"
             >
-              <h3 className="text-lg font-semibold text-blue-900 dark:text-black">{p.name}</h3>
+              <h3 className="text-lg font-semibold">{p.name}</h3>
               <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">{p.desc}</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {p.stack.map((t) => (
@@ -274,9 +276,7 @@ export default function Portfolio() {
           {EXPERIENCE.map((e) => (
             <div key={e.role} className="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-5">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
-                <h3 className="text-lg font-semibold text-blue-900 dark:text-black">
-                  {e.role} · {e.company}
-                </h3>
+                <h3 className="text-lg font-semibold">{e.role} · {e.company}</h3>
                 <span className="text-sm text-zinc-600 dark:text-zinc-400">{e.time}</span>
               </div>
               <ul className="mt-3 list-disc pl-5 space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
@@ -312,7 +312,7 @@ export default function Portfolio() {
               <li className="flex items-center gap-2"><Code2 className="h-4 w-4" /> 6+ years software development</li>
               <li className="flex items-center gap-2"><Server className="h-4 w-4" /> REST APIs, PostgreSQL, CI/CD</li>
               <li className="flex items-center gap-2"><Cloud className="h-4 w-4" /> AWS, Docker, Kubernetes</li>
-              <li className="flex items-center gap-2"><Shield className="h-4 w-4" /> Security-minded engineering</li>
+              <li className="flex items-center gap-2"><Shield className="h-4 w-4" /> Security‑minded engineering</li>
             </ul>
           </div>
         </div>
@@ -325,7 +325,7 @@ export default function Portfolio() {
           <div className="flex items-center gap-4">
             <a href={PROFILE.github} className="inline-flex items-center gap-2 hover:underline"><Github className="h-4 w-4" /> GitHub</a>
             <a href={PROFILE.linkedin} className="inline-flex items-center gap-2 hover:underline"><Linkedin className="h-4 w-4" /> LinkedIn</a>
-            <a href={`mailto:${PROFILE.email}`} className="inline-flex items-center gap-2 hover:underline</a>
+            <a href={`mailto:${PROFILE.email}`} className="inline-flex items-center gap-2 hover:underline"><Mail className="h-4 w-4" /> Email</a>
           </div>
         </div>
       </footer>
