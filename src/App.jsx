@@ -50,8 +50,8 @@ const PROJECTS = [
   {
     name: "Portfolio Website (This Site)",
     desc:
-      "Responsive, accessible portfolio built with React + Tailwind, animated with Framer Motion, and designed for 1‑click deployment to AWS Amplify.",
-    stack: ["React", "TailwindCSS", "Framer Motion", "Amplify"],
+      "Responsive, accessible portfolio built with React + Tailwind, animated with Framer Motion, and designed for automated deployment to Cloudflare Pages.",
+    stack: ["React", "TailwindCSS", "Framer Motion", "Automated Deployment"],
     links: [
       { href: "#", label: "Source" },
       { href: "#", label: "Live" },
@@ -195,7 +195,7 @@ export default function Portfolio() {
             <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href="#projects"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl text-sm font-medium bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 hover:opacity-90"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl text-sm font-medium bg-sky-950 text-white dark:bg-white dark:text-zinc-900 hover:opacity-90"
               >
                 View Projects <ExternalLink className="h-4 w-4" />
               </a>
