@@ -195,7 +195,7 @@ export default function Portfolio() {
             <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href="#projects"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl text-sm font-medium bg-sky-900 text-white dark:bg-white dark:text-zinc-900 hover:opacity-90"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl text-sm font-medium bg-sky-800 text-white dark:bg-white dark:text-zinc-900 hover:opacity-90"
               >
                 View Projects <ExternalLink className="h-4 w-4" />
               </a>
@@ -298,7 +298,7 @@ export default function Portfolio() {
               Reach out and let’s build something great.
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
-              <a href={`mailto:${PROFILE.email}`} className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl text-sm font-medium bg-sky-900 text-white dark:bg-white dark:text-zinc-900 hover:opacity-90">
+              <a href={`mailto:${PROFILE.email}`} className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl text-sm font-medium bg-sky-800 text-white dark:bg-white dark:text-zinc-900 hover:opacity-90">
                 <Mail className="h-4 w-4" /> Email
               </a>
               <a href={PROFILE.linkedin} className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl text-sm font-medium border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-800">
